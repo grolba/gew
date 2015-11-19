@@ -1,5 +1,5 @@
 (function () {
-  'use strict';
-  angular.module('com.module.users', []);
+    'use strict';
+    angular.module('com.module.users', []);
 
 })();

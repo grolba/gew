@@ -1,5 +1,5 @@
 (function () {
-  'use strict';
-  angular.module('com.module.pages', []);
+    'use strict';
+    angular.module('com.module.pages', []);
 
 })();

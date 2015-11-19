@@ -1,4 +1,4 @@
 (function () {
-  'use strict';
-  angular.module('com.module.files', []);
+    'use strict';
+    angular.module('com.module.files', []);
 })();
