@@ -1,9 +1,9 @@
 'use strict';
 
-module.exports = function (Note) {
+module.exports = function (Workflow) {
 
-    Note.createFakeData = function (faker) {
-        return Note.create({
+    Workflow.createFakeData = function (faker) {
+        return Workflow.create({
             title: faker.lorem.sentence(),
             body: faker.lorem.paragraph()
         });

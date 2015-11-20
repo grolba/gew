@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a href data-ui-sref="^.list" class="btn btn-xs btn-default"><i class="fa fa-arrow-left"></i></a>
+        {{ctrl.field.name}}
+        <small class="label label-default">{{ctrl.field.price}}</small>
+
+    <span class="pull-right btn-group">
+    <a href class="btn btn-xs btn-default" data-ui-sref="^.edit({fieldId: ctrl.field.id})">
+        <i class="fa fa-pencil"></i>
+    </a>
+    <a href class="btn btn-xs btn-default" data-ui-sref="^.delete({fieldId: ctrl.field.id})">
+        <i class="fa fa-trash-o"></i>
+    </a>
+  </span>
+    </div>
+    <div class="panel-body">
+        <pre>{{ctrl.field | json}}</pre>
+    </div>
+</div>

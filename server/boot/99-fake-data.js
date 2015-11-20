@@ -22,6 +22,9 @@ module.exports = function (app) {
     Note: {
       count: 15
     },
+    Workflow: {
+      count: 15
+    },
     Page: {
       count: 15
     }
