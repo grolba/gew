@@ -55,6 +55,7 @@
             //'com.module.posts',
             //'com.module.products',
             //'com.module.sandbox',
+            'com.module.spaces',
             'com.module.entities',
             'com.module.issues',
             'com.module.users',
