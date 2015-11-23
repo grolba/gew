@@ -42,7 +42,6 @@
 
             // Get Settings for Database
             $rootScope.setSetting = function (key, value) {
-
                 Setting.find({
                     filter: {
                         where: {
