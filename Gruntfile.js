@@ -56,7 +56,7 @@ module.exports = function (grunt) {
           module: 'loopbackApp'
         },
         files: {
-          '<%= yeoman.app %>/js/translations.js': ['po/*.po']
+          '<%= yeoman.app %>/js/translations.js': ['translations/*.po']
         }
       }
     },
