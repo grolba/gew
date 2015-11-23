@@ -18,7 +18,7 @@ angular.module('loopbackApp').run(['gettextCatalog', function (gettextCatalog) {
         "Could not add event!": "Konnte Ereignis nicht hinzufügen",
         "Could not add setting!": "Konnte Einstellung nicht hinzufügen",
         "Current user": "Derzeitiger Nutzer",
-        "Dashboard": "Instrumententafel",
+        "Dashboard": "Dashboard",
         "Deleting this cannot be undone": "Löschen kann nicht wiederufen werden",
         "Don't worry we won't spam your inbox": "Keine Sorge wir versenden keinen Spam",
         "Edit event": "Ereignis editieren",

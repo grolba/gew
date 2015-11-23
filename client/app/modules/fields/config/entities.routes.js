@@ -30,6 +30,28 @@
                     templateUrl: 'modules/fields/views/form.html',
                     controllerAs: 'ctrl',
                     controller: function ($state, FieldsService, entities, field) {
+                        this.model = {
+                            fields: [
+                                {
+                                    investmentName: 'abc',
+                                    investmentDate: (new Date()).toDateString(),
+                                    stockIdentifier: '',
+                                    investmentValue: '',
+                                    relationshipName: '',
+                                    complianceApprover: '',
+                                    requestorComment: ''
+                                },
+                                {
+                                    investmentName: 'haf',
+                                    investmentDate: (new Date()).toDateString(),
+                                    stockIdentifier: '',
+                                    investmentValue: '',
+                                    relationshipName: '',
+                                    complianceApprover: '',
+                                    requestorComment: ''
+                                }
+                            ]
+                        };
                         this.entities = entities;
                         this.field = field;
                         this.formFields = FieldsService.getFormFields(entities);

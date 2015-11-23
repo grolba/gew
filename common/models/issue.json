@@ -1,0 +1,65 @@
+{
+  "name": "Issue",
+  "plural": "issues",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "project": {
+      "type": "object",
+      "required": true
+    },
+    "type": {
+      "type": "object",
+      "required": true
+    },
+    "summary": {
+      "type": "string",
+      "required": true
+    },
+    "priority": {
+      "type": [
+        "string"
+      ]
+    },
+    "components": {
+      "type": [
+        "object"
+      ]
+    },
+    "assignee": {
+      "type": "string",
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "attachment": {
+      "type": [
+        "object"
+      ]
+    },
+    "tags": {
+      "type": [
+        "string"
+      ]
+    },
+    "dueDate": {
+      "type": "date"
+    },
+    "created": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

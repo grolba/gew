@@ -59,45 +59,49 @@
             };
 
             this.getFormFields = function (entities) {
-                var catOptions = entities.map(function (entity) {
-                    return {
-                        name: entity.name,
-                        value: entity.id
-                    };
-                });
-                return [
-                    {
-                        key: 'name',
-                        type: 'input',
-                        templateOptions: {
-                            label: gettextCatalog.getString('Name'),
-                            required: true
-                        }
-                    },
-                    {
-                        key: 'entityId',
-                        type: 'select',
-                        templateOptions: {
-                            label: gettextCatalog.getString('Entity'),
-                            required: true,
-                            options: catOptions
-                        }
-                    },
-                    {
-                        key: 'description',
-                        type: 'input',
-                        templateOptions: {
-                            label: gettextCatalog.getString('Description')
-                        }
-                    },
-                    {
-                        key: 'price',
-                        type: 'input',
-                        templateOptions: {
-                            label: gettextCatalog.getString('Price')
-                        }
+                return [{
+                    type: 'repeatingSection',
+                    key: 'fields',
+                    templateOptions: {
+                        btnText: 'Add another field',
+                        fields: [
+                            {
+                                key: 'name',
+                                type: 'input',
+                                templateOptions: {
+                                    label: gettextCatalog.getString('Name'),
+                                    required: true
+                                }
+                            },
+                            {
+                                key: 'entityId',
+                                type: 'select',
+                                templateOptions: {
+                                    label: gettextCatalog.getString('Entity'),
+                                    required: true,
+                                    options: entities.map(function (entity) {
+                                        return {
+                                            name: entity.name,
+                                            value: entity.id
+                                        };
+                                    })
+                                }
+                            },
+                            {
+                                key: 'type',
+                                type: 'select',
+                                templateOptions: {
+                                    label: gettextCatalog.getString('Type'),
+                                    required: true,
+                                    options: [{
+                                        name: 'Text',
+                                        value: 'text'
+                                    }]
+                                }
+                            }
+                        ]
                     }
-                ];
+                }];
             };
         });
 

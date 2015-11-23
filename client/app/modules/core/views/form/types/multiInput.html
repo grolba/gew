@@ -1,0 +1,23 @@
+<div>
+    <div class="clearfix">
+        <div class="row"
+             style="margin-bottom:14px"
+             data-ng-repeat="item in model[options.key] track by $index"
+             data-ng-init="itemOptions = copyItemOptions()">
+            <formly-field class="no-padding col-xs-10"
+                          options="itemOptions"
+                          model="model[options.key]"
+                          form="form"
+                          index="$index">
+            </formly-field>
+            <div class="col-xs-2" style="margin-top:6px">
+                <a data-ng-click="model[options.key].splice($index, 1)">
+                    x Remove
+                </a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button type="button" class="btn btn-success btn-sm" data-ng-click="model[options.key].push('')">Add</button>
+    </div>
+</div>

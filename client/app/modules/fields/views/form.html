@@ -6,11 +6,7 @@
             <span data-ng-show="ctrl.field.id" translate>Edit field</span>
         </div>
         <div class="panel-body">
-            <div class="row">
-                <div class="col-md-4">
-                    <formly-form model="ctrl.field" fields="ctrl.formFields" options="ctrl.formOptions"></formly-form>
-                </div>
-            </div>
+            <formly-form model="ctrl.field" fields="ctrl.formFields" options="ctrl.formOptions"></formly-form>
         </div>
         <div class="panel-footer">
             <button type="submit" class="btn btn-primary btn-success" data-ng-click="ctrl.submit()"

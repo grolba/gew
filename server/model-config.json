@@ -89,5 +89,9 @@
   "Field": {
     "dataSource": "db",
     "public": true
+  },
+  "Issue": {
+    "dataSource": "db",
+    "public": true
   }
 }

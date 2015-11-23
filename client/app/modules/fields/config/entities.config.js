@@ -3,7 +3,7 @@
     angular
         .module('com.module.entities')
         .run(function ($rootScope, Field, Entity, gettextCatalog) {
-            $rootScope.addMenu(gettextCatalog.getString('Fields'), 'app.fields.list', 'fa-file');
+            $rootScope.addMenu(gettextCatalog.getString('Entities'), 'app.fields.list', 'fa-file');
 
             Field.find(function (data) {
                 $rootScope.addDashboardBox(gettextCatalog.getString('Fields'), 'bg-yellow', 'ion-ios7-cart-outline', data.length, 'app.fields.list');

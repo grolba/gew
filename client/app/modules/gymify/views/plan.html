@@ -1,0 +1,18 @@
+<section data-admin-header class="content-header" data-sub-title="{{ 'Manage your settings here!' | translate }}"
+         title="{{ 'Training' | translate }}">
+</section>
+<section class="content">
+    <tabset class="nav-tabs-custom">
+        <tab heading="{{ 'Calendar' | translate }}">
+            <ul>
+                <li>Plan: Training (Videos), Ernährung</li>
+                <li>Tagebuch: Gewicht, Kalorien</li>
+            </ul>
+            <div data-ui-calendar data-ng-model="eventSources"></div>
+        </tab>
+        <tab heading="{{ 'Next steps' | translate }}">
+            <div class="row">
+            </div>
+        </tab>
+    </tabset>
+</section>

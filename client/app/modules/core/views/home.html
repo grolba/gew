@@ -12,49 +12,36 @@
             <tabset class="nav-tabs-custom">
                 <tab heading="{{ 'Dashboard' | translate }}">
                     <div class="row">
-
-                        <small-box name="{{ box.name }}" color="{{ box.color }}" icon="{{ box.icon }}"
-                                   quantity="{{ box.quantity }}" href="{{ box.href }}"
-                                   ng-repeat="box in boxes | orderBy:['-quantity', 'name']"></small-box>
-
+                        <div class="col-md-6">
+                            <h2>Als Guru</h2>
+                            <ul>
+                                <li>Punkte sammeln und verteilen</li>
+                                <li>Video erstellen</li>
+                                <li>Trainingsplan erstellen</li>
+                                <li>Ernährungsplan erstellen</li>
+                                <li>Blogbeitrag erstellen</li>
+                                <li>Online-Coaching freischalten</li>
+                                <li>Bereich für Mitglieder freischalten</li>
+                                <li>Analytics freischalten</li>
+                                <li>Online-Shop freischalten</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Als Kunde</h2>
+                            <ul>
+                                <li>Punkte sammeln und verteilen</li>
+                                <li>Videos entdecken</li>
+                                <li>Trainingspläne entdecken</li>
+                                <li>Ernährungspläne entdecken</li>
+                                <li>Blogs entdecken</li>
+                                <li>Rabatte und Schnäpchen entdecken</li>
+                                <li>Personal Trainer finden</li>
+                            </ul>
+                        </div>
                     </div>
                 </tab>
-                <tab heading="{{ 'Variables' | translate }}">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4 translate>Current user</h4>
-                            <pre>{{currentUser | json}}</pre>
-                        </div>
-                        <div class="col-md-6">
-                            <h4 translate>Settings</h4>
-                            <pre>{{settings | json}}</pre>
-                        </div>
-                    </div>
-                </tab>
-                <tab heading="{{ 'Theme' | translate }}">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4> {{ 'Theme' | translate }}
-                                <small>{{appTheme}}</small>
-                            </h4>
-                            <div class="btn-group" data-toggle="btn-toggle">
-                                <button type="button" class="btn btn-default btn-xs" data-toggle="on"
-                                        ng-repeat="theme in appThemes" ng-click="setSetting('appTheme', theme.class)">
-                                    {{theme.name}}
-                                </button>
-                            </div>
-                            <h4>Layout
-                                <small>{{appLayout}}</small>
-                            </h4>
-                            <div class="btn-group" data-toggle="btn-toggle">
-                                <button type="button" class="btn btn-default btn-xs" data-toggle="on"
-                                        ng-repeat="layout in appLayouts"
-                                        ng-click="setSetting('appLayout', layout.class)">
-                                    {{layout.name}}
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                <tab heading="{{ 'Empfohlen' | translate }}">
+
                 </tab>
             </tabset>
         </div>

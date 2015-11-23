@@ -5,11 +5,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 "MIME-Version: 1.0\n"
-"PO-Revision-Date: 2015-01-25 17:24-0500\n"
+"PO-Revision-Date: 2015-11-21 14:18+0100\n"
 "Last-Translator: Marc Manthey <marc@let.de>\n"
 "Language-Team: German\n"
 "Language: de\n"
-"X-Generator: Poedit 1.7.3\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "POT-Creation-Date: \n"
 
@@ -92,7 +92,7 @@ msgstr "Derzeitiger Nutzer"
 #: client/app/modules/core/config/core.config.js:18
 #: client/app/modules/core/views/home.html:13
 msgid "Dashboard"
-msgstr "Instrumententafel"
+msgstr "Übersicht"
 
 #: client/app/modules/events/controllers/events.ctrl.js:49
 #: client/app/modules/files/controllers/files.ctrl.js:13
@@ -126,31 +126,31 @@ msgstr "Genieße deine neue Persönlichkeit "
 
 #: client/app/modules/products/controllers/products.ctrl.js:57
 msgid "Error deleting category"
-msgstr "Fehler beim löschen der Kategorie"
+msgstr "Fehler beim Löschen der Kategorie"
 
 #: client/app/modules/events/controllers/events.ctrl.js:56
 msgid "Error deleting event"
-msgstr "Fehler beim löschen des Ereignises"
+msgstr "Fehler beim Löschen des Ereignises"
 
 #: client/app/modules/pages/controllers/pages.ctrl.js:39
 msgid "Error deleting page"
-msgstr "Fehler beim löschen der Seite"
+msgstr "Fehler beim Löschen der Seite"
 
 #: client/app/modules/posts/controllers/posts.ctrl.js:31
 msgid "Error deleting post"
-msgstr "Fehler beim löschen des Beitrags"
+msgstr "Fehler beim Löschen des Beitrags"
 
 #: client/app/modules/products/controllers/products.ctrl.js:43
 msgid "Error deleting product"
-msgstr "Fehler beim löschen des Produkts"
+msgstr "Fehler beim Löschen des Produkts"
 
 #: client/app/modules/settings/controllers/settings.ctrl.js:34
 msgid "Error deleting setting"
-msgstr "Fehler beim löschen der Einstellung"
+msgstr "Fehler beim Löschen der Einstellung"
 
 #: client/app/modules/users/controllers/users.ctrl.js:31
 msgid "Error deleting user"
-msgstr "Fehler beim löschen des Nutzers"
+msgstr "Fehler beim Löschen des Nutzers"
 
 #: client/app/modules/users/controllers/register.ctrl.js:111
 msgid "Error registering!"
@@ -158,11 +158,11 @@ msgstr "Fehler bei der Registrierung"
 
 #: client/app/modules/users/controllers/profile.ctrl.js:43
 msgid "Error saving profile"
-msgstr "Fehler beim speichern des Profils"
+msgstr "Fehler beim Speichern des Profils"
 
 #: client/app/modules/users/controllers/users.ctrl.js:52
 msgid "Error saving user:"
-msgstr "Fehler beim speichern des Nutzers"
+msgstr "Fehler beim Speichern des Nutzers"
 
 #: client/app/modules/users/controllers/register.ctrl.js:104
 msgid "Error signin in after registration!"
@@ -341,7 +341,7 @@ msgstr "Einstellung gespeichert"
 #: client/app/modules/core/views/home.html:28
 #: client/app/modules/settings/views/main.html:1
 msgid "Settings"
-msgstr "Einstellung"
+msgstr "Einstellungen"
 
 #: client/app/modules/users/views/login.html:7
 msgid "Sign In"
