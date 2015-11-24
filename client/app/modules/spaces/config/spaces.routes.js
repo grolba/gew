@@ -23,6 +23,26 @@
                             }
                         ]
                     }
+                })
+                .state('app.spaces.addspace', {
+                    url: '/addspace',
+                    templateUrl: 'modules/spaces/views/spaceform.html',
+                    controllerAs: 'ctrl',
+                    controller: function ($state, SpacesService, space) {
+                        this.space = space;
+                        this.formFields = SpacesService.getFormFields();
+                        this.formOptions = {};
+                        this.submit = function () {
+                            SpacesService.upsertSpace(this.space).then(function () {
+                                $state.go('^.list');
+                            });
+                        };
+                    },
+                    resolve: {
+                        space: function () {
+                            return {};
+                        }
+                    }
                 });
         });
 

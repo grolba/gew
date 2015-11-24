@@ -1,4 +1,10 @@
 # Gew
+- Spaces
+- Entity w/ Workflow
+- Goals
+- Network
+- Products
+
 ## Modul hinzufügen
 ### Struktur
 - Modul Struktur in /client/app/modules/{module-name} clonen und anpassen
